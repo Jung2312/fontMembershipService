@@ -19,49 +19,61 @@
 
 ## 2. 데이터베이스
 - ERD
-<br/>
-![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/0740089c-a2c9-41ea-a5fd-1fa94089ba7b)
+  
+  ![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/0740089c-a2c9-41ea-a5fd-1fa94089ba7b)
 
 - 테이블 구성
 * 회원 테이블
-![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/5c9d96c5-464f-4c1a-b028-e14d5dbedcc9)
+  
+  ![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/5c9d96c5-464f-4c1a-b028-e14d5dbedcc9)
 
 * 폰트 테이블
-![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/d23fe640-b850-4ba8-86f7-484200490d23)
+  
+  ![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/d23fe640-b850-4ba8-86f7-484200490d23)
 
 * 즐겨찾기 테이블
-![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/5ff5a32f-ed02-4673-b53c-4d95fb059b01)
+  
+  ![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/5ff5a32f-ed02-4673-b53c-4d95fb059b01)
 
 * 제작사 테이블
-![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/35034e8d-d84d-4348-bf4b-090751bbf073)
+  
+  ![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/35034e8d-d84d-4348-bf4b-090751bbf073)
 
 * 멤버셉 테이블
-![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/58f706c1-cad3-4543-afb5-07cb40b4b066)
+  
+  ![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/58f706c1-cad3-4543-afb5-07cb40b4b066)
 
 * 리뷰 테이블
-![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/ae128847-570d-49e7-8955-bd0cacc20d87)
+  
+  ![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/ae128847-570d-49e7-8955-bd0cacc20d87)
 
 * 다운로드 테이블
-![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/5d498479-7121-4336-bc8d-01ddd546ac93)
+  
+  ![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/5d498479-7121-4336-bc8d-01ddd546ac93)
 
 * 결제 테이블
-![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/87229495-f01c-41b8-b1ac-c706790946c2)
+  
+  ![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/87229495-f01c-41b8-b1ac-c706790946c2)
 
 ## 3. 실행 화면
 * 로그인
-![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/e83b2817-7d78-429d-9fbd-b5215aee813f)
+  
+  ![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/e83b2817-7d78-429d-9fbd-b5215aee813f)
 
 * 회원가입
 ![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/5cdb7c95-2238-4e4a-8882-96966c9d4d42)
 
 * 메인
-![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/5fc248d2-b5a6-41c8-9d5b-9d28a05c328d)
+  
+  ![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/5fc248d2-b5a6-41c8-9d5b-9d28a05c328d)
 
 * 멤버십 결제
-![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/9a0a9467-064a-44e8-87b5-98d05e90b7a9)
+  
+  ![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/9a0a9467-064a-44e8-87b5-98d05e90b7a9)
 
 * 다운로드 순위
-![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/5b66ca8b-01bd-4ab2-98e5-517882ad9226)
+  
+  ![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/5b66ca8b-01bd-4ab2-98e5-517882ad9226)
 
 ## 4. 프로시저 및 트리거
 - 프로시저
@@ -107,3 +119,7 @@ begin
     open a for
         select 폰트.폰트이름,count(distinct 다운로드.다운로드번호)as"다운로드횟수",avg(리뷰.별점)as"평균별점"
         --distinct를 넣어야 리뷰수가 더 많을경우 다운로원
+
+
+## 5. 팀원
+- Jung2312
