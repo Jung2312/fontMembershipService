@@ -1,4 +1,4 @@
-![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/f6f9ebcb-b6f0-4e58-b68a-34cf669dc88b)# fontMembershipService
+# fontMembershipService
 
 <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"><img src="https://img.shields.io/badge/ORACLE-F80000?style=for-the-badge&logo=ORACLE&logoColor=white"><img src="https://img.shields.io/badge/eclipseide-2C2255?style=for-the-badge&logo=eclipseide&logoColor=white">
 
