@@ -112,5 +112,6 @@
   <br/>
 
 ## 5. 팀원
-
-- Jung2312
+- [@asdjdisd](https://github.com/asdjdisd)
+- [@Jung2312](https://github.com/Jung2312)
+- [@kimsh0116](https://github.com/kimsh0116)
