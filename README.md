@@ -6,7 +6,7 @@
 [2. 데이터베이스](#2-데이터베이스)<br/>
 [3. 실행 화면](#-3실행-화면)<br/>
 [4. 프로시저 및 트리거](#-4프로시저-및-트리거)<br/>
-[6. 팀원](#6-팀원)<br/>
+[5. 팀원](#5-팀원)<br/>
 
 ------------
   
@@ -19,6 +19,7 @@
 
 ## 2. 데이터베이스
 - ERD
+<br/>
 ![image](https://github.com/Jung2312/fontMembershipService/assets/97083703/0740089c-a2c9-41ea-a5fd-1fa94089ba7b)
 
 - 테이블 구성
@@ -105,35 +106,4 @@ as
 begin
     open a for
         select 폰트.폰트이름,count(distinct 다운로드.다운로드번호)as"다운로드횟수",avg(리뷰.별점)as"평균별점"
-        --distinct를 넣어야 리뷰수가 더 많을경우 다운로드횟수가 중복되어 계산되지 않음
-        from 다운로드 left join 리뷰 on 다운로드.폰트번호 = 리뷰.폰트번호
-        --left join으로 다운로드횟수가 0 인 폰트 조인 x
-        left join 폰트 on 다운로드.폰트번호 = 폰트.폰트번호
-        group by 폰트.폰트이름,폰트.폰트번호
-        order by "다운로드횟수" desc, "평균별점" desc nulls last;
-        --null last를 넣지 않으면 평점이0점인 값이 맨 위로 오게됨
-end;
-
-- 트리거
-*
-create or replace NONEDITIONABLE trigger ft_4--회원가입시 비밀번호 4자리 이상
-    before insert on 회원
-    for each row
-begin
-    if length(:new.비밀번호) <= 3 
-        then raise_application_error(-20001,'비밀번호는 4자리 이상이여야 합니다.');
-    end if;
-end;
-
-*
-create or replace NONEDITIONABLE trigger ft_5--결제시 10% 적립금 지급
-    before insert on 결제
-    for each row
-declare
-    a number;
-begin
-    a := :new.결제금액*0.1;
-    update 회원 
-    set 적립금 = 적립금 + a
-    where 회원아이디 = :new.회원아이디;
-end;
+        --distinct를 넣어야 리뷰수가 더 많을경우 다운로원
